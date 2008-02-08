@@ -1,5 +1,5 @@
 " ben blazak -- 2008-02-05
-" $Id: ftype.vim,v 1.1 2008-02-05 19:02:44 ben Exp $
+" $Id: ftype.vim,v 1.2 2008-02-08 23:41:39 ben Exp $
 
 " note: using "filetype" instead of "bufread" doesn't seem to work...
 
@@ -20,8 +20,10 @@ autocmd bufread *.py,*.pl,*.java setlocal shiftwidth=4
 autocmd bufread *.py,*.pl,*.java setlocal tabstop=4
 
 
-"display
+"display & file interpretation
 autocmd bufread *.txt setlocal linebreak
+autocmd BufRead *.java set include=^#\s*import
+autocmd BufRead *.java set includeexpr=substitute(v:fname,'\\.','/','g')
 
 "movement
 autocmd bufread *.txt nnoremap j gj
@@ -57,4 +59,8 @@ autocmd bufread *.c,*.cpp,*.h,*.java let @f="0f/lli  \<esc>Vgq"
 autocmd bufread *.py,makefile,*.pl let @f="0li  \<esc>Vgq"
 		"/**/ -- fix formatting after pasting inside it
 autocmd bufread *.c,*.cpp,*.java let @e="0i * \<esc>j"
+
+"abbreviations
+autocmd bufread *.java iabbr sysout System.out.print(
+autocmd bufread *.java iabbr sysoutl System.out.println(
 
