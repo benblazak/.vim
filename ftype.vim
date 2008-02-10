@@ -1,5 +1,5 @@
 " ben blazak -- 2008-02-05
-" $Id: ftype.vim,v 1.3 2008-02-10 00:52:36 ben Exp $
+" $Id: ftype.vim,v 1.4 2008-02-10 04:20:45 ben Exp $
 
 " note: using "filetype" instead of "bufread" doesn't seem to work...
 
@@ -20,10 +20,10 @@ autocmd bufread *.py,*.pl,*.java setlocal shiftwidth=4
 autocmd bufread *.py,*.pl,*.java setlocal tabstop=4
 
 
-"display & file interpretation
+"display & folding
 autocmd bufread *.txt setlocal linebreak
-autocmd BufRead *.java set include=^#\s*import
-autocmd BufRead *.java set includeexpr=substitute(v:fname,'\\.','/','g')
+autocmd bufread *.java set include=^#\s*import
+autocmd bufread *.java set includeexpr=substitute(v:fname,'\\.','/','g')
 
 "movement
 autocmd bufread *.txt nnoremap j gj
@@ -36,7 +36,6 @@ autocmd bufread *.txt vnoremap <Down> gj
 autocmd bufread *.txt vnoremap <Up> gk
 autocmd bufread *.txt inoremap <Down> <C-o>gj
 autocmd bufread *.txt inoremap <Up> <C-o>gk
-
 
 "registers
 	"comment out code
