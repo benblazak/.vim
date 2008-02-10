@@ -1,5 +1,5 @@
 " ben blazak -- 2008-02-05
-" $Id: ftype.vim,v 1.2 2008-02-08 23:41:39 ben Exp $
+" $Id: ftype.vim,v 1.3 2008-02-10 00:52:36 ben Exp $
 
 " note: using "filetype" instead of "bufread" doesn't seem to work...
 
@@ -63,4 +63,5 @@ autocmd bufread *.c,*.cpp,*.java let @e="0i * \<esc>j"
 "abbreviations
 autocmd bufread *.java iabbr sysout System.out.print(
 autocmd bufread *.java iabbr sysoutl System.out.println(
+autocmd bufread *.java iabbr sysoutf System.out.printf(
 
