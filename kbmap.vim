@@ -1,5 +1,5 @@
 " ben blazak -- [~ fall 2006]
-" $Id: kbmap.vim,v 1.2 2008-02-05 19:02:44 ben Exp $
+" $Id: kbmap.vim,v 1.3 2008-02-10 20:23:47 ben Exp $
 
 "note: from usr_40.1, keymapping
 	" :map Normal, Visual and Operator-pending
@@ -24,6 +24,9 @@ nnoremap <C-s> :wa<CR>| inoremap <C-s> <esc>:wa<CR>a
 noremap <S-space> <esc>| noremap! kj <esc>
 ":tabn
 noremap <C-tab> :tabn<CR>| noremap! <C-tab> :tabn<CR>
+"move view up & down
+nnoremap <C-PageUp> H2kM| inoremap <C-PageUp> <esc>H2kM
+nnoremap <C-PageDown> L2jM| inoremap <C-PageDown> <esc>L2jM
 
 
 "mapped for use with the dvorak layout on my laptop keyboard
