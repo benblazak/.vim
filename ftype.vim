@@ -1,5 +1,5 @@
 " ben blazak -- 2008-02-05
-" $Id: ftype.vim,v 1.4 2008-02-10 04:20:45 ben Exp $
+" $Id: ftype.vim,v 1.5 2008-02-18 00:01:07 ben Exp $
 
 " note: using "filetype" instead of "bufread" doesn't seem to work...
 
@@ -63,4 +63,7 @@ autocmd bufread *.c,*.cpp,*.java let @e="0i * \<esc>j"
 autocmd bufread *.java iabbr sysout System.out.print(
 autocmd bufread *.java iabbr sysoutl System.out.println(
 autocmd bufread *.java iabbr sysoutf System.out.printf(
+
+"auto formatting
+autocmd bufread *.py setlocal formatoptions+=or
 
