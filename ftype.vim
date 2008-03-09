@@ -1,5 +1,5 @@
 " ben blazak -- 2008-02-05
-" $Id: ftype.vim,v 1.6 2008-03-02 06:21:24 ben Exp $
+" $Id: ftype.vim,v 1.7 2008-03-09 00:37:21 ben Exp $
 
 " note: using "filetype" instead of "bufread" doesn't seem to work...
 
@@ -51,6 +51,8 @@ autocmd bufread *.py,makefile,*.pl,*.sh let @r="0xxj"
 autocmd bufread *.lsp,*.lisp let @t="0v$hyi(format t \"~A~%~A~%\" \"\<esc>pa\" \<esc>A)\<esc>j"
 		"function prototypes (position cursor at bottom of file)
 autocmd bufread *.c,*.cpp let @p="[[kVy1GPA;\<esc>\<c-o>"
+		"get functions (very basic..)
+autocmd bufread *.java let @g="$bbveyopublic \<esc>p\<esc>k$bveyja get\<esc>pblll~A() { return \<esc>pa; }\<esc>j"
 	"aid in formatting comments
 		"// -- assumes '//' has characters before it
 autocmd bufread *.c,*.cpp,*.h,*.java let @f="0f/lli  \<esc>Vgq"
