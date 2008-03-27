@@ -1,5 +1,5 @@
 " ben blazak -- 2008-02-05
-" $Id: ftype.vim,v 1.9 2008-03-09 00:58:42 ben Exp $
+" $Id: ftype.vim,v 1.10 2008-03-27 03:50:04 ben Exp $
 
 " note: using "filetype" instead of "bufread" doesn't seem to work...
 
@@ -24,6 +24,7 @@ autocmd bufread *.py,*.pl,*.java setlocal tabstop=4
 autocmd bufread *.txt setlocal linebreak
 autocmd bufread *.java set include=^#\s*import
 autocmd bufread *.java set includeexpr=substitute(v:fname,'\\.','/','g')
+autocmd bufread *.java set foldmethod=indent
 
 "movement
 autocmd bufread *.txt nnoremap j gj
