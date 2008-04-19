@@ -1,5 +1,5 @@
 " ben blazak -- 2008-02-05
-" $Id: ftype.vim,v 1.10 2008-03-27 03:50:04 ben Exp $
+" $Id: ftype.vim,v 1.11 2008-04-19 00:10:56 ben Exp $
 
 " note: using "filetype" instead of "bufread" doesn't seem to work...
 
@@ -14,8 +14,8 @@ autocmd bufread *.c,*.cpp,*.h,*.java,*.lsp,*.lisp noremap <c-f9> :wa<CR>:make al
 
 "indent
 autocmd bufread *.c,*.cpp,*.h setlocal shiftwidth=8
-autocmd bufread *.lsp,*.lisp,*.htm,*.html,*.xml setlocal expandtab
-autocmd bufread *.lsp,*.lisp,*.htm,*.html,*.xml setlocal shiftwidth=2
+autocmd bufread *.lsp,*.lisp,*.htm,*.html,*.xml,*.php setlocal expandtab
+autocmd bufread *.lsp,*.lisp,*.htm,*.html,*.xml,*.php setlocal shiftwidth=2
 autocmd bufread *.py,*.pl,*.java setlocal shiftwidth=4
 autocmd bufread *.py,*.pl,*.java setlocal tabstop=4
 
