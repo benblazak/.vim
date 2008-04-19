@@ -1,16 +1,16 @@
 " ben blazak -- 2008-02-05
-" $Id: ftype.vim,v 1.12 2008-04-19 08:40:27 ben Exp $
+" $Id: ftype.vim,v 1.13 2008-04-19 08:51:24 ben Exp $
 
 " note: using "filetype" instead of "bufread" doesn't seem to work...
 
 
 "make stuff
 	"save+compile
-autocmd bufread *.c,*.cpp,*.h,*.java,*.lsp,*.lisp noremap <f9> :wa<CR>:make<CR>| noremap! <f9> <esc>:wa<CR>:make<CR>
+autocmd bufread * noremap <f9> :wa<CR>:make<CR>| noremap! <f9> <esc>:wa<CR>:make<CR>
 	"run
-autocmd bufread *.c,*.cpp,*.h,*.java,*.lsp,*.lisp noremap <f10> :make run<CR>| noremap! <f10> <esc>:make run<CR>
+autocmd bufread * noremap <f10> :make run<CR>| noremap! <f10> <esc>:make run<CR>
 	"save+compile+run
-autocmd bufread *.c,*.cpp,*.h,*.java,*.lsp,*.lisp noremap <c-f9> :wa<CR>:make all run<CR>| noremap! <c-f9> <esc>:wa<CR>:make all run<CR>
+autocmd bufread * noremap <c-f9> :wa<CR>:make all run<CR>| noremap! <c-f9> <esc>:wa<CR>:make all run<CR>
 
 "indent
 autocmd bufread *.c,*.cpp,*.h setlocal shiftwidth=8
