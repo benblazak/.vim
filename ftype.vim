@@ -1,5 +1,5 @@
 " ben blazak -- 2008-02-05
-" $Id: ftype.vim,v 1.11 2008-04-19 00:10:56 ben Exp $
+" $Id: ftype.vim,v 1.12 2008-04-19 08:40:27 ben Exp $
 
 " note: using "filetype" instead of "bufread" doesn't seem to work...
 
@@ -69,4 +69,9 @@ autocmd bufread *.java iabbr sysoutf System.out.printf(
 
 "auto formatting
 autocmd bufread *.py setlocal formatoptions+=or
+
+"changing filetypes
+autocmd bufread *.php setlocal filetype=xhtml
+autocmd bufread *.php nnoremap <m-1> :setlocal<space>filetype=php<cr>| inoremap <m-1> <esc>:setlocal<space>filetype=php<cr>a
+autocmd bufread *.php nnoremap <m-2> :setlocal<space>filetype=xhtml<cr>| inoremap <m-2> <esc>:setlocal<space>filetype=xhtml<cr>a
 
