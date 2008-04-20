@@ -1,7 +1,5 @@
 " ben blazak -- 2008-02-05
-" $Id: ftype.vim,v 1.14 2008-04-20 19:54:25 ben Exp $
-
-" note: using "filetype" instead of "bufread" doesn't seem to work...
+" $Id: ftype.vim,v 1.15 2008-04-20 20:32:27 ben Exp $
 
 
 "make stuff
@@ -40,15 +38,17 @@ autocmd bufread *.txt inoremap <Up> <C-o>gk
 
 "registers
 	"comment out code
-autocmd bufread *.c,*.cpp,*.java let @c="0i// \<esc>j"
+autocmd bufread *.c,*.cpp,*.java,*.php let @c="0i// \<esc>j"
 autocmd bufread *.lsp,*.lisp let @c="0i; \<esc>j"
 autocmd bufread *.py,makefile,*.pl,*.sh let @c="0i \<esc>i#\<esc>j"
 autocmd bufread *.css let @c="0i/* \<esc>A */\<esc>j"
+autocmd bufread *.htm,*.html,*.xml let @c="0i<!-- \<esc>A -->\<esc>j"
 	"un-comment out code
-autocmd bufread *.c,*.cpp,*.java let @r="0xxxj"
+autocmd bufread *.c,*.cpp,*.java,*.php let @r="0xxxj"
 autocmd bufread *.lsp,*.lisp let @r="0xxj"
 autocmd bufread *.py,makefile,*.pl,*.sh let @r="0xxj"
 autocmd bufread *.css let @r="0xxx$xxxj"
+autocmd bufread *.htm,*.html,*.xml let @r="0xxxxx$xxxxj"
 	"generate code
 		"to help test functions
 autocmd bufread *.lsp,*.lisp let @t="0v$hyi(format t \"~A~%~A~%\" \"\<esc>pa\" \<esc>A)\<esc>j"
