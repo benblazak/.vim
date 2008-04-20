@@ -1,5 +1,7 @@
 " ben blazak -- 2008-02-05
-" $Id: ftype.vim,v 1.15 2008-04-20 20:32:27 ben Exp $
+" $Id: ftype.vim,v 1.16 2008-04-20 20:53:38 ben Exp $
+
+" note: using "filetype" instead of "bufread" doesn't seem to work...
 
 
 "make stuff
