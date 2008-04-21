@@ -1,0 +1,77 @@
+" vim: filetype=vim
+
+" ben blazak -- 2008-02-05
+" $Id: ftplugin.genfile,v 1.1 2008-04-21 00:30:01 ben Exp $
+
+" ----------------------------------------------------------------------------
+" all non-comment lines should be preceded by "[filetype list]\s*++\s*"
+" ----------------------------------------------------------------------------
+
+
+"indent
+c cpp h			++ setlocal shiftwidth=8
+lsp lisp htm html xml php ++ setlocal expandtab
+lsp lisp htm html xml php ++ setlocal shiftwidth=2
+py pl java		++ setlocal shiftwidth=4
+py pl java		++ setlocal tabstop=4
+
+
+"display & folding
+txt ++ setlocal linebreak
+java ++ setlocal include=^#\s*import
+java ++ setlocal includeexpr=substitute(v:fname,'\\.','/','g')
+java ++ setlocal foldmethod=indent
+
+"movement
+txt ++ nnoremap j gj
+txt ++ nnoremap k gk
+txt ++ vnoremap j gj
+txt ++ vnoremap k gk
+txt ++ nnoremap <Down> gj
+txt ++ nnoremap <Up> gk
+txt ++ vnoremap <Down> gj
+txt ++ vnoremap <Up> gk
+txt ++ inoremap <Down> <C-o>gj
+txt ++ inoremap <Up> <C-o>gk
+
+"registers
+	"comment out code
+c cpp java php	++ let @c="0i// \<esc>j"
+lsp lisp	++ let @c="0i; \<esc>j"
+py pl sh make	++ let @c="0i \<esc>i#\<esc>j"
+css		++ let @c="0i/* \<esc>A */\<esc>j"
+htm html xml	++ let @c="0i<!-- \<esc>A -->\<esc>j"
+	"un-comment out code
+c cpp java php	++ let @r="0xxxj"
+lsp lisp	++ let @r="0xxj"
+py pl sh make	++ let @r="0xxj"
+css		++ let @r="0xxx$xxxj"
+htm html xml	++ let @r="0xxxxx$xxxxj"
+	"generate code
+		"@t = to help test functions
+		"@p = function prototypes (position cursor at bottom of file)
+		"@g = get functions (very basic..)
+lsp lisp ++ let @t="0v$hyi(format t \"~A~%~A~%\" \"\<esc>pa\" \<esc>A)\<esc>j"
+c cpp 	++ let @p="[[kVy1GPA;\<esc>\<c-o>"
+java	++ let @g="$F F lvf hy}Opublic \<esc>p\<esc>$bvey	a get\<esc>pblll~A() { return \<esc>pa; }\<esc>j"
+	"aid in formatting comments
+		"// -- assumes '//' has characters before it
+		"# -- assumes '#' has no characters before it
+		"/**/ -- fix formatting after pasting inside it
+c cpp h java	++ let @f="0f/lli  \<esc>Vgq"
+py pl make	++ let @f="0li  \<esc>Vgq"
+c cpp h java	++ let @e="0i * \<esc>j"
+
+"abbreviations
+java ++ iabbr sysout System.out.print(
+java ++ iabbr sysoutl System.out.println(
+java ++ iabbr sysoutf System.out.printf(
+
+"auto formatting
+py ++ setlocal formatoptions+=or
+
+"changing filetypes
+php ++ setlocal filetype=xhtml
+php ++ nnoremap <m-1> :setlocal<space>filetype=php<cr>| inoremap <m-1> <esc>:setlocal<space>filetype=php<cr>a
+php ++ nnoremap <m-2> :setlocal<space>filetype=xhtml<cr>| inoremap <m-2> <esc>:setlocal<space>filetype=xhtml<cr>a
+
