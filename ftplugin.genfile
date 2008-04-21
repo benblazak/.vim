@@ -1,7 +1,7 @@
 " vim: filetype=vim
 
 " ben blazak -- 2008-02-05
-" $Id: ftplugin.genfile,v 1.2 2008-04-21 00:41:28 ben Exp $
+" $Id: ftplugin.genfile,v 1.3 2008-04-21 01:40:12 ben Exp $
 
 " ----------------------------------------------------------------------------
 " all non-comment lines should be preceded by "[filetype list]\s*++\s*"
@@ -10,8 +10,8 @@
 
 "indent
 c cpp h			++ setlocal shiftwidth=8
-lsp lisp htm html xml php ++ setlocal expandtab
-lsp lisp htm html xml php ++ setlocal shiftwidth=2
+lsp lisp htm html xhtml xml php ++ setlocal expandtab
+lsp lisp htm html xhtml xml php ++ setlocal shiftwidth=2
 py pl java		++ setlocal shiftwidth=4
 py pl java		++ setlocal tabstop=4
 
@@ -40,13 +40,13 @@ c cpp java php	++ let @c="0i// \<esc>j"
 lsp lisp	++ let @c="0i; \<esc>j"
 py pl sh make	++ let @c="0i \<esc>i#\<esc>j"
 css		++ let @c="0i/* \<esc>A */\<esc>j"
-htm html xml	++ let @c="0i<!-- \<esc>A -->\<esc>j"
+htm html xhtml xml	++ let @c="0i<!-- \<esc>A -->\<esc>j"
 	"un-comment out code
 c cpp java php	++ let @r="0xxxj"
 lsp lisp	++ let @r="0xxj"
 py pl sh make	++ let @r="0xxj"
 css		++ let @r="0xxx$xxxj"
-htm html xml	++ let @r="0xxxxx$xxxxj"
+htm html xhtml xml	++ let @r="0xxxxx$xxxxj"
 	"generate code
 		"@t = to help test functions
 		"@p = function prototypes (position cursor at bottom of file)
