@@ -1,7 +1,7 @@
 " vim: filetype=vim
 
 " ben blazak -- 2008-02-05
-" $Id: ftplugin.genfile,v 1.8 2008-05-01 21:29:10 ben Exp $
+" $Id: ftplugin.genfile,v 1.9 2008-05-01 23:06:27 ben Exp $
 
 " ----------------------------------------------------------------------------
 " all non-comment lines should be preceded by "[filetype list]\s*++\s*"
@@ -13,8 +13,8 @@ c cpp h			++ setlocal shiftwidth=8
 lsp lisp htm html xhtml xml php ++ setlocal expandtab
 lsp lisp htm html xhtml xml ++ setlocal shiftwidth=2
 lsp lisp htm html xhtml xml ++ setlocal tabstop=2
-py perl java php css	++ setlocal shiftwidth=4
-py perl java php css	++ setlocal tabstop=4
+python perl java php css	++ setlocal shiftwidth=4
+python perl java php css	++ setlocal tabstop=4
 
 
 "display & folding
@@ -41,8 +41,8 @@ c cpp java php	++ map <c-c> :call<space>Comment('// ', '')<cr>
 c cpp java php	++ map <c-u> :call<space>UnComment('// ', '')<cr>
 lsp lisp	++ map <c-c> :call<space>Comment('; ', '')<cr>
 lsp lisp	++ map <c-u> :call<space>UnComment('; ', '')<cr>
-py perl sh make	++ map <c-c> :call<space>Comment('# ', '')<cr>
-py perl sh make	++ map <c-u> :call<space>UnComment('# ', '')<cr>
+python perl sh make	++ map <c-c> :call<space>Comment('# ', '')<cr>
+python perl sh make	++ map <c-u> :call<space>UnComment('# ', '')<cr>
 css		++ map <c-u> :call<space>UnComment('/\* ', ' \*/')<cr>
 css		++ map <c-c> :call<space>Comment('/\* ', ' \*/')<cr>
 htm html xhtml xml ++  map <c-c> :call<space>Comment('<!-- ', ' -->')<cr>
@@ -59,7 +59,7 @@ java	++ let @g="$F F lvf hy}Opublic \<esc>p\<esc>$bvey	a get\<esc>pblll~A() { r
 		"# -- assumes '#' has no characters before it
 		"/**/ -- fix formatting after pasting inside it
 c cpp h java	++ let @f="0f/lli  \<esc>Vgq"
-py perl make	++ let @f="0li  \<esc>Vgq"
+python perl make	++ let @f="0li  \<esc>Vgq"
 c cpp h java	++ let @e="0i * \<esc>j"
 
 "abbreviations
@@ -68,9 +68,9 @@ java ++ iabbr sysoutl System.out.println(
 java ++ iabbr sysoutf System.out.printf(
 
 "auto formatting
-py ++ setlocal formatoptions+=or
+python ++ setlocal formatoptions+=or
 
 "changing filetypes
-php ++ nnoremap <m-1> :setlocal<space>filetype=php<cr>| inoremap <m-1> <esc>:setlocal<space>filetype=php<cr>a
-php ++ nnoremap <m-2> :setlocal<space>filetype=xhtml<cr>| inoremap <m-2> <esc>:setlocal<space>filetype=xhtml<cr>a
+php ++ let b:ben_filetype_next = "xhtml"
+xhtml ++ let b:ben_filetype_next = "php"
 

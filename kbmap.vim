@@ -1,5 +1,5 @@
 " ben blazak -- [~ fall 2006]
-" $Id: kbmap.vim,v 1.7 2008-04-20 21:00:40 ben Exp $
+" $Id: kbmap.vim,v 1.8 2008-05-01 23:06:27 ben Exp $
 
 "note: from usr_40.1, keymapping
 	" :map Normal, Visual and Operator-pending
@@ -40,4 +40,6 @@ noremap <f10> :make run<CR>| noremap! <f10> <esc>:make run<CR>
 	"save+compile+run
 noremap <c-f9> :wa<CR>:make all run<CR>| noremap! <c-f9> <esc>:wa<CR>:make all run<CR>
 
+"change filetype
+nnoremap <m-2> :call<space>FileTypeNext()<cr>| inoremap <m-2> <esc>:call<space>FileTypeNext()<cr>a
 
