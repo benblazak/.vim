@@ -1,7 +1,7 @@
 " vim: filetype=vim
 
 " ben blazak -- 2008-02-05
-" $Id: ftplugin.genfile,v 1.7 2008-05-01 20:41:17 ben Exp $
+" $Id: ftplugin.genfile,v 1.8 2008-05-01 21:29:10 ben Exp $
 
 " ----------------------------------------------------------------------------
 " all non-comment lines should be preceded by "[filetype list]\s*++\s*"
@@ -13,8 +13,8 @@ c cpp h			++ setlocal shiftwidth=8
 lsp lisp htm html xhtml xml php ++ setlocal expandtab
 lsp lisp htm html xhtml xml ++ setlocal shiftwidth=2
 lsp lisp htm html xhtml xml ++ setlocal tabstop=2
-py perl java php	++ setlocal shiftwidth=4
-py perl java php	++ setlocal tabstop=4
+py perl java php css	++ setlocal shiftwidth=4
+py perl java php css	++ setlocal tabstop=4
 
 
 "display & folding
