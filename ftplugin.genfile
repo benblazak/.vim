@@ -1,7 +1,7 @@
 " vim: filetype=vim
 
 " ben blazak -- 2008-02-05
-" $Id: ftplugin.genfile,v 1.12 2008-05-03 22:22:12 ben Exp $
+" $Id: ftplugin.genfile,v 1.13 2008-05-08 04:44:19 ben Exp $
 
 " ----------------------------------------------------------------------------
 " all non-comment lines should be preceded by "[filetype list]\s*++\s*"
@@ -37,14 +37,14 @@ txt ++ inoremap <Up> <C-o>gk
 
 "registers
 	"(un)comment code
-c cpp java php	++ map <c-c> :call<space>Comment('// ', '')<cr>
-c cpp java php	++ map <c-u> :call<space>UnComment('// ', '')<cr>
+c cpp java	++ map <c-c> :call<space>Comment('// ', '')<cr>
+c cpp java	++ map <c-u> :call<space>UnComment('// ', '')<cr>
 lsp lisp	++ map <c-c> :call<space>Comment('; ', '')<cr>
 lsp lisp	++ map <c-u> :call<space>UnComment('; ', '')<cr>
 python perl sh make	++ map <c-c> :call<space>Comment('# ', '')<cr>
 python perl sh make	++ map <c-u> :call<space>UnComment('# ', '')<cr>
-css		++ map <c-u> :call<space>UnComment('/\* ', ' \*/')<cr>
-css		++ map <c-c> :call<space>Comment('/\* ', ' \*/')<cr>
+css php		++ map <c-u> :call<space>UnComment('/\* ', ' \*/')<cr>
+css php		++ map <c-c> :call<space>Comment('/\* ', ' \*/')<cr>
 htm html xhtml xml ++  map <c-c> :call<space>Comment('<!-- ', ' -->')<cr>
 htm html xhtml xml ++  map <c-u> :call<space>UnComment('<!-- ', ' -->')<cr>
 	"generate code
