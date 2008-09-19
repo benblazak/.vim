@@ -1,7 +1,7 @@
 " vim: filetype=vim
 
 " ben blazak -- 2008-02-05
-" $Id: ftplugin.genfile,v 1.15 2008-09-03 17:39:20 ben Exp $
+" $Id: ftplugin.genfile,v 1.16 2008-09-19 23:02:16 ben Exp $
 
 " ----------------------------------------------------------------------------
 " all non-comment lines should be preceded by "[filetype list]\s*++\s*"
@@ -19,7 +19,6 @@ python perl java php css vim	++ setlocal tabstop=4
 
 "display & folding
 text ++ setlocal linebreak
-text ++ setlocal spell spelllang=en_us
 java ++ setlocal include=^#\s*import
 java ++ setlocal includeexpr=substitute(v:fname,'\\.','/','g')
 java ++ setlocal foldmethod=indent
