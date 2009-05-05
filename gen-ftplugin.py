@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 # ben blazak -- 2008-04-20
-# $Id: gen-ftplugin.py,v 1.4 2008-05-01 23:06:27 ben Exp $
+# $Id: gen-ftplugin.py,v 1.5 2009-05-05 22:25:18 ben Exp $
 
 # a little script to generate ftplugin files from vimscript files where every
 # non-comment line is preceded by "[filetype list]\s*++\s*"
@@ -32,7 +32,7 @@ for line in open('ftplugin.genfile', 'r'):
 				+ line[1]
 
 for type in files.keys():
-	open('ftplugin_ben/' + type + '_ben.vim', 'w').write(files[type])
+	open('ftplugin/' + type + '_ben.vim', 'w').write(files[type])
 
 # notes:
 #
