@@ -1,5 +1,5 @@
 " ben blazak -- [~ fall 2006]
-" $Id: kbmap.vim,v 1.10 2009-07-15 19:51:31 ben Exp $
+" $Id: kbmap.vim,v 1.11 2009-07-17 00:32:28 ben Exp $
 
 "note: from usr_40.1, keymapping
 	" :map Normal, Visual and Operator-pending
@@ -26,8 +26,6 @@ noremap <S-space> <esc>| noremap! kj <esc>
 noremap <C-tab> :tabn<CR>| noremap! <C-tab> <esc>:tabn<CR>
 ":tabp
 noremap <C-S-tab> :tabp<CR>| noremap! <C-S-tab> <esc>:tabp<CR>
-":tabnew
-noremap <c-n> :tabnew<cr>| noremap! <c-n> <esc>:tabnew<cr>
 "move view up & down
 nnoremap <C-PageUp> <PageUp>| inoremap <C-PageUp> <PageUp>
 nnoremap <C-PageDown> <PageDown>| inoremap <C-PageDown> <PageUp>
