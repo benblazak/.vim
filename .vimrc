@@ -1,0 +1,37 @@
+" ben blazak -- [~ fall 2006]
+" $Id: .vimrc,v 1.10 2009-07-19 01:04:36 ben Exp $
+
+set nocompatible
+behave xterm
+
+syntax on
+filetype plugin indent on
+
+set backup
+
+set showmode		"seems to do this by default, but it cant hurt
+set ruler		"display curser position
+set number		"show line numbers
+set showcmd		"show unfinished commands
+set showmatch		"show matching parenthesis
+set hlsearch
+set incsearch
+set smartcase		"ignore case in a search string unless it contains
+			" uppercase chars
+
+set history=100
+set undolevels=200
+set cmdheight=2		"use 2 lines for the command line
+
+set foldmethod=syntax
+set foldlevel=999 "open all folds when a file opens by default
+
+set printoptions=number:y
+
+
+"TODO: make os.vim conditionally set stuff
+"source ~/.vim/os.vim
+source ~/.vim/kbmap.vim
+source ~/.vim/ftype.vim
+source ~/.vim/functions.vim
+
