@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 # ben blazak -- 2008-04-20
-# $Id: gen-ftplugin.py,v 1.5 2009-05-05 22:25:18 ben Exp $
+# $Id: gen-ftplugin.py,v 1.6 2009-09-01 02:54:28 ben Exp $
 
 # a little script to generate ftplugin files from vimscript files where every
 # non-comment line is preceded by "[filetype list]\s*++\s*"
@@ -36,7 +36,7 @@ for type in files.keys():
 
 # notes:
 #
-# contents of file enclosed in an 'if ...' to protect setting from getting
+# contents of file enclosed in an 'if ...' to protect settings from getting
 # overridden by other settings, as in the case where a php ftplugin (that i
 # didn't write) sources something to do with html, which sources my html
 # ftplugin, which overrides @c and @r -- yup
