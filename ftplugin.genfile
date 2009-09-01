@@ -1,7 +1,7 @@
 " vim: filetype=vim
 
 " ben blazak -- 2008-02-05
-" $Id: ftplugin.genfile,v 1.18 2009-07-10 02:20:53 ben Exp $
+" $Id: ftplugin.genfile,v 1.19 2009-09-01 02:54:28 ben Exp $
 
 " ----------------------------------------------------------------------------
 " all non-comment lines should be preceded by "[filetype list]\s*++\s*"
@@ -9,13 +9,13 @@
 
 
 "indent
-lsp lisp htm html xhtml xml php fortran	++ setlocal expandtab
-lsp lisp htm html xhtml xml				++ setlocal shiftwidth=2
-lsp lisp htm html xhtml xml				++ setlocal softtabstop=2
-python perl java css vim ada php		++ setlocal shiftwidth=4
-python perl java css vim ada			++ setlocal tabstop=4
+lsp lisp htm html xhtml xml			++ setlocal shiftwidth=2
+lsp lisp htm html xhtml xml			++ setlocal tabstop=2
+python perl java css vim ada php	++ setlocal shiftwidth=4
+python perl java css vim ada php	++ setlocal tabstop=4
 c cpp h							++ setlocal shiftwidth=8
-php								++ setlocal softtabstop=4
+c cpp h							++ setlocal tabstop=8
+fortran							++ setlocal expandtab
 fortran							++ setlocal shiftwidth=3
 fortran							++ setlocal softtabstop=3
 
@@ -67,9 +67,9 @@ java	++ let @g="$F F lvf hy}Opublic \<esc>p\<esc>$bvey	a get\<esc>pblll~A() { r
 		"// -- assumes '//' has characters before it
 		"# -- assumes '#' has no characters before it
 		"/**/ -- fix formatting after pasting inside it
-c cpp h java	++ let @f="0f/lli  \<esc>Vgq"
+c cpp h java		++ let @f="0f/lli  \<esc>Vgq"
 python perl make	++ let @f="0li  \<esc>Vgq"
-c cpp h java	++ let @e="0i * \<esc>j"
+c cpp h java		++ let @e="0i * \<esc>j"
 
 "abbreviations
 java ++ iabbr sysout System.out.print(
@@ -80,6 +80,6 @@ java ++ iabbr sysoutf System.out.printf(
 python sh ++ setlocal formatoptions+=or
 
 "changing filetypes
-php ++ let b:ben_filetype_next = "xhtml"
-xhtml ++ let b:ben_filetype_next = "php"
+php		++ let b:filetype_2 = "xhtml"
+xhtml	++ let b:filetype_2 = "php"
 
