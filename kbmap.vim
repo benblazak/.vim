@@ -1,5 +1,5 @@
 " ben blazak -- [~ fall 2006]
-" $Id: kbmap.vim,v 1.12 2009-09-01 02:54:28 ben Exp $
+" $Id: kbmap.vim,v 1.13 2009-09-01 03:03:39 ben Exp $
 
 "note: from usr_40.1, keymapping
 	" :map Normal, Visual and Operator-pending
@@ -41,9 +41,10 @@ noremap <f10> :make run<CR>| noremap! <f10> <esc>:make run<CR>
 noremap <c-f9> :wa<CR>:make all run<CR>| noremap! <c-f9> <esc>:wa<CR>:make all run<CR>
 
 "change filetype
+	"vars
 let b:filetype_orig = '' "filetype is not known when this file is sourced
 let b:filetype_2 = 'xhtml'
-	"---
+	"maps
 noremap <m-1> :if b:filetype_orig != '' \| let &filetype = b:filetype_orig \| endif<cr>
 noremap <m-2> :if b:filetype_orig == '' \| let b:filetype_orig = &filetype \| endif \| let &filetype = b:filetype_2<cr>
 
