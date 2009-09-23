@@ -1,5 +1,5 @@
 " ben blazak -- [~ fall 2006]
-" $Id: kbmap.vim,v 1.14 2009-09-23 06:50:21 ben Exp $
+" $Id: kbmap.vim,v 1.15 2009-09-23 07:00:52 ben Exp $
 
 "note: from usr_40.1, keymapping
 	" :map Normal, Visual and Operator-pending
@@ -46,6 +46,8 @@ let b:filetype_orig = '' "filetype is not known when this file is sourced
 let b:filetype_2 = 'xhtml'
 let b:filetype_3 = 'rst'
 	"maps
+	"	TODO: must be a way to not copy + paste for n > 1 ...
 noremap <m-1> :if b:filetype_orig != '' \| let &filetype = b:filetype_orig \| endif<cr>
 noremap <m-2> :if b:filetype_orig == '' \| let b:filetype_orig = &filetype \| endif \| let &filetype = b:filetype_2<cr>
+noremap <m-3> :if b:filetype_orig == '' \| let b:filetype_orig = &filetype \| endif \| let &filetype = b:filetype_3<cr>
 
