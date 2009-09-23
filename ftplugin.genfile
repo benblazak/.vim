@@ -1,7 +1,7 @@
 " vim: filetype=vim
 
 " ben blazak -- 2008-02-05
-" $Id: ftplugin.genfile,v 1.19 2009-09-01 02:54:28 ben Exp $
+" $Id: ftplugin.genfile,v 1.20 2009-09-23 06:45:33 ben Exp $
 
 " ----------------------------------------------------------------------------
 " all non-comment lines should be preceded by "[filetype list]\s*++\s*"
@@ -15,9 +15,9 @@ python perl java css vim ada php	++ setlocal shiftwidth=4
 python perl java css vim ada php	++ setlocal tabstop=4
 c cpp h							++ setlocal shiftwidth=8
 c cpp h							++ setlocal tabstop=8
-fortran							++ setlocal expandtab
-fortran							++ setlocal shiftwidth=3
-fortran							++ setlocal softtabstop=3
+fortran rst						++ setlocal expandtab
+fortran rst						++ setlocal shiftwidth=3
+fortran rst						++ setlocal softtabstop=3
 
 
 "display & folding
@@ -40,21 +40,23 @@ text ++ inoremap <Up> <C-o>gk
 
 "registers
 	"(un)comment code
-c cpp java	++ map <c-c> :call<space>Comment('// ', '')<cr>
+c cpp java	++ map <c-c>   :call<space>Comment('// ', '')<cr>
 c cpp java	++ map <c-u> :call<space>UnComment('// ', '')<cr>
-lsp lisp	++ map <c-c> :call<space>Comment('; ', '')<cr>
+lsp lisp	++ map <c-c>   :call<space>Comment('; ', '')<cr>
 lsp lisp	++ map <c-u> :call<space>UnComment('; ', '')<cr>
+css php		++ map <c-c>   :call<space>Comment('/\* ', ' \*/')<cr>
 css php		++ map <c-u> :call<space>UnComment('/\* ', ' \*/')<cr>
-css php		++ map <c-c> :call<space>Comment('/\* ', ' \*/')<cr>
-vim			++ map <c-c> :call<space>Comment('" ', '')<cr>
+vim			++ map <c-c>   :call<space>Comment('" ', '')<cr>
 vim			++ map <c-u> :call<space>UnComment('" ', '')<cr>
-fortran		++ map <c-c> :call<space>Comment('c', '')<cr>
+fortran		++ map <c-c>   :call<space>Comment('c', '')<cr>
 fortran		++ map <c-u> :call<space>UnComment('c', '')<cr>
-ada			++ map <c-c> :call<space>Comment('-- ', '')<cr>
+ada			++ map <c-c>   :call<space>Comment('-- ', '')<cr>
 ada			++ map <c-u> :call<space>UnComment('-- ', '')<cr>
-python perl sh make	++ map <c-c> :call<space>Comment('# ', '')<cr>
+rst			++ map <c-c>   :call<space>Comment('.. # ', '')<cr>
+rst			++ map <c-u> :call<space>UnComment('.. # ', '')<cr>
+python perl sh make	++ map <c-c>   :call<space>Comment('# ', '')<cr>
 python perl sh make	++ map <c-u> :call<space>UnComment('# ', '')<cr>
-htm html xhtml xml	++ map <c-c> :call<space>Comment('<!-- ', ' -->')<cr>
+htm html xhtml xml	++ map <c-c>   :call<space>Comment('<!-- ', ' -->')<cr>
 htm html xhtml xml	++ map <c-u> :call<space>UnComment('<!-- ', ' -->')<cr>
 	"generate code
 		"@t = to help test functions
