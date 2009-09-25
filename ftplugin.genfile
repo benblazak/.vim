@@ -1,7 +1,7 @@
 " vim: filetype=vim
 
 " ben blazak -- 2008-02-05
-" $Id: ftplugin.genfile,v 1.20 2009-09-23 06:45:33 ben Exp $
+" $Id: ftplugin.genfile,v 1.21 2009-09-25 00:08:32 ben Exp $
 
 " ----------------------------------------------------------------------------
 " all non-comment lines should be preceded by "[filetype list]\s*++\s*"
@@ -38,7 +38,7 @@ text ++ vnoremap <Up> gk
 text ++ inoremap <Down> <C-o>gj
 text ++ inoremap <Up> <C-o>gk
 
-"registers
+"macros
 	"(un)comment code
 c cpp java	++ map <c-c>   :call<space>Comment('// ', '')<cr>
 c cpp java	++ map <c-u> :call<space>UnComment('// ', '')<cr>
@@ -72,6 +72,8 @@ java	++ let @g="$F F lvf hy}Opublic \<esc>p\<esc>$bvey	a get\<esc>pblll~A() { r
 c cpp h java		++ let @f="0f/lli  \<esc>Vgq"
 python perl make	++ let @f="0li  \<esc>Vgq"
 c cpp h java		++ let @e="0i * \<esc>j"
+	"misc
+rst ++ inoremap **h <esc>yypVr
 
 "abbreviations
 java ++ iabbr sysout System.out.print(
