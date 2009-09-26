@@ -1,5 +1,5 @@
 " ben blazak -- [~ fall 2006]
-" $Id: kbmap.vim,v 1.16 2009-09-25 00:08:32 ben Exp $
+" $Id: kbmap.vim,v 1.17 2009-09-26 02:57:14 ben Exp $
 
 "note: from usr_40.1, keymapping
 	" :map Normal, Visual and Operator-pending
@@ -17,9 +17,7 @@ set winaltkeys=no
 
 "macros
 	"line
-		"TODO: generalize so it can used to write any chare to eol (rewrite as
-		"function?)
-inoremap **l <esc>79A-<esc>079lDo
+inoremap **l <esc>yl80p<esc>079lDo
 
 "control
 	"save
