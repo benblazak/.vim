@@ -15,6 +15,8 @@ set winaltkeys=no
 "macros
 	"line
 inoremap **l <esc>yl80p<esc>079lD
+	"underline
+imap **h <esc>xo<esc>pa**l<esc>khljlD
 
 "control
 	"save
