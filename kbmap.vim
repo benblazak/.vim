@@ -14,7 +14,7 @@ set winaltkeys=no
 
 "macros
 	"line
-inoremap **l <esc>yl80p<esc>079lDo
+inoremap **l <esc>yl80p<esc>079lD
 
 "control
 	"save

@@ -73,7 +73,7 @@ c cpp h java		++ let @f="0f/lli  \<esc>Vgq"
 python perl make	++ let @f="0li  \<esc>Vgq"
 c cpp h java		++ let @e="0i * \<esc>j"
 	"misc
-rst ++ imap **h <esc>xo<esc>pa**l<bs><esc>khljlDo
+rst ++ imap **h <esc>xo<esc>pa**l<esc>khljlDo
 
 "abbreviations
 java ++ iabbr sysout System.out.print(
