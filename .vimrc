@@ -1,6 +1,3 @@
-" ben blazak -- [~ fall 2006]
-" $Id: .vimrc,v 1.10 2009-07-19 01:04:36 ben Exp $
-
 set nocompatible
 behave xterm
 

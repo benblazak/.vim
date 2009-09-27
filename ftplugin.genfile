@@ -1,8 +1,5 @@
 " vim: filetype=vim
 
-" ben blazak -- 2008-02-05
-" $Id: ftplugin.genfile,v 1.23 2009-09-26 03:21:15 ben Exp $
-
 " ----------------------------------------------------------------------------
 " all non-comment lines should be preceded by "[filetype list]\s*++\s*"
 " ----------------------------------------------------------------------------
@@ -84,7 +81,7 @@ java ++ iabbr sysoutl System.out.println(
 java ++ iabbr sysoutf System.out.printf(
 
 "auto formatting
-python sh ++ setlocal formatoptions+=or
+python sh pl ++ setlocal formatoptions+=or
 
 "changing filetypes
 php		++ let b:filetype_2 = "xhtml"

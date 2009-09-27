@@ -1,7 +1,3 @@
-" ben blazak -- 2008-04-20
-" $Id: functions.vim,v 1.3 2009-09-01 02:54:28 ben Exp $
-
-
 " to get more granular than line, i think id have to be done with python or
 " perl - but line granularity is all you want with (un)commenting, so, it
 " works out :)

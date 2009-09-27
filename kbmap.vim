@@ -1,6 +1,3 @@
-" ben blazak -- [~ fall 2006]
-" $Id: kbmap.vim,v 1.17 2009-09-26 02:57:14 ben Exp $
-
 "note: from usr_40.1, keymapping
 	" :map Normal, Visual and Operator-pending
 	" :vmap Visual
