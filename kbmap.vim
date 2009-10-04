@@ -41,6 +41,10 @@ noremap <f10> :make run<CR>| noremap! <f10> <esc>:make run<CR>
 	"save+compile+run
 noremap <c-f9> :wa<CR>:make all run<CR>| noremap! <c-f9> <esc>:wa<CR>:make all run<CR>
 
+"external program filters/inserts
+	"insert datetime
+nnoremap <c-d> m':r !dt<cr>v$hyu``P| noremap! <c-d> <esc>m':r !dt<cr>v$hyu``pa
+
 "change filetype
 	"vars
 let b:filetype_orig = '' "filetype is not known when this file is sourced
