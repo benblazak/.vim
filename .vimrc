@@ -13,8 +13,6 @@ set showcmd		"show unfinished commands
 set showmatch		"show matching parenthesis
 set hlsearch
 set incsearch
-set smartcase		"ignore case in a search string unless it contains
-			" uppercase chars
 
 set history=100
 set undolevels=200
