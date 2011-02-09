@@ -34,8 +34,6 @@ text ++ inoremap <Up> <C-o>gk
 	"(un)comment code
 c cpp java	++ map <c-c>   :call<space>Comment('// ', '')<cr>
 c cpp java	++ map <c-u> :call<space>UnComment('// ', '')<cr>
-lsp lisp	++ map <c-c>   :call<space>Comment('; ', '')<cr>
-lsp lisp	++ map <c-u> :call<space>UnComment('; ', '')<cr>
 css php		++ map <c-c>   :call<space>Comment('/\* ', ' \*/')<cr>
 css php		++ map <c-u> :call<space>UnComment('/\* ', ' \*/')<cr>
 vim			++ map <c-c>   :call<space>Comment('" ', '')<cr>
@@ -46,6 +44,8 @@ ada haskell	++ map <c-c>   :call<space>Comment('-- ', '')<cr>
 ada haskell	++ map <c-u> :call<space>UnComment('-- ', '')<cr>
 rst			++ map <c-c>   :call<space>Comment('.. # ', '')<cr>
 rst			++ map <c-u> :call<space>UnComment('.. # ', '')<cr>
+lsp lisp scm		++ map <c-c>   :call<space>Comment('; ', '')<cr>
+lsp lisp scm		++ map <c-u> :call<space>UnComment('; ', '')<cr>
 python perl sh make	++ map <c-c>   :call<space>Comment('# ', '')<cr>
 python perl sh make	++ map <c-u> :call<space>UnComment('# ', '')<cr>
 htm html xhtml xml	++ map <c-c>   :call<space>Comment('<!-- ', ' -->')<cr>
