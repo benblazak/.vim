@@ -13,10 +13,10 @@ python perl java css vim ada php	++ setlocal noexpandtab shiftwidth=4 tabstop=4 
 haskell								++ setlocal expandtab	shiftwidth=4 tabstop=4 softtabstop=4
 
 "display & folding
-text ++ setlocal linebreak
-java ++ setlocal include=^#\s*import
-java ++ setlocal includeexpr=substitute(v:fname,'\\.','/','g')
-java ++ setlocal foldmethod=indent
+text        ++ setlocal linebreak
+java        ++ setlocal include=^#\s*import
+java        ++ setlocal includeexpr=substitute(v:fname,'\\.','/','g')
+java python ++ setlocal foldmethod=indent
 
 "movement
 text ++ nnoremap j gj
