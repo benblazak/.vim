@@ -17,6 +17,7 @@ text        ++ setlocal linebreak
 java        ++ setlocal include=^#\s*import
 java        ++ setlocal includeexpr=substitute(v:fname,'\\.','/','g')
 java python ++ setlocal foldmethod=indent
+remind		++ setlocal comments^=:;
 
 "movement
 text ++ nnoremap j gj
@@ -44,12 +45,12 @@ ada haskell	++ map <c-c>   :call<space>Comment('-- ', '')<cr>
 ada haskell	++ map <c-u> :call<space>UnComment('-- ', '')<cr>
 rst			++ map <c-c>   :call<space>Comment('.. # ', '')<cr>
 rst			++ map <c-u> :call<space>UnComment('.. # ', '')<cr>
-lsp lisp scheme		++ map <c-c>   :call<space>Comment('; ', '')<cr>
-lsp lisp scheme		++ map <c-u> :call<space>UnComment('; ', '')<cr>
-python perl sh make	++ map <c-c>   :call<space>Comment('# ', '')<cr>
-python perl sh make	++ map <c-u> :call<space>UnComment('# ', '')<cr>
-htm html xhtml xml	++ map <c-c>   :call<space>Comment('<!-- ', ' -->')<cr>
-htm html xhtml xml	++ map <c-u> :call<space>UnComment('<!-- ', ' -->')<cr>
+lsp lisp scheme remind	++ map <c-c>   :call<space>Comment('; ', '')<cr>
+lsp lisp scheme remind	++ map <c-u> :call<space>UnComment('; ', '')<cr>
+python perl sh make		++ map <c-c>   :call<space>Comment('# ', '')<cr>
+python perl sh make		++ map <c-u> :call<space>UnComment('# ', '')<cr>
+htm html xhtml xml		++ map <c-c>   :call<space>Comment('<!-- ', ' -->')<cr>
+htm html xhtml xml		++ map <c-u> :call<space>UnComment('<!-- ', ' -->')<cr>
 	"generate code
 		"@t = to help test functions
 		"@p = function prototypes (position cursor at bottom of file)
