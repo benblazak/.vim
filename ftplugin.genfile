@@ -18,8 +18,9 @@ java        ++ setlocal include=^#\s*import
 java        ++ setlocal includeexpr=substitute(v:fname,'\\.','/','g')
 java python ++ setlocal foldmethod=indent
 remind		++ setlocal comments^=:;
-remind		++ syn match remindComment ";.*$"
 remind		++ setlocal foldmethod=marker
+remind		++ syn match remindComment ";.*$"
+remind		++ syn keyword remindExpiry THROUGH
 
 "movement
 text ++ nnoremap j gj
