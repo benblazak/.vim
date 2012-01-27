@@ -10,7 +10,7 @@ lsp lisp htm html xhtml xml scheme	++ setlocal noexpandtab shiftwidth=2 tabstop=
 fortran rst							++ setlocal expandtab   shiftwidth=3 tabstop=3 softtabstop=3
 c cpp h								++ setlocal noexpandtab shiftwidth=8 tabstop=8 softtabstop=8
 python perl java css vim ada php	++ setlocal noexpandtab shiftwidth=4 tabstop=4 softtabstop=4
-haskell								++ setlocal expandtab	shiftwidth=4 tabstop=4 softtabstop=4
+haskell remind						++ setlocal expandtab	shiftwidth=4 tabstop=4 softtabstop=4
 
 "display & folding
 text        ++ setlocal linebreak
