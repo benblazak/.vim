@@ -75,8 +75,8 @@ java ++ iabbr sysoutl System.out.println(
 java ++ iabbr sysoutf System.out.printf(
 
 "auto formatting
-python sh pl	++ setlocal formatoptions+=or
-yacc haskell	++ setlocal autoindent
+python sh pl			++ setlocal formatoptions+=or
+yacc haskell markdown	++ setlocal autoindent
 
 "changing filetypes
 php		++ let b:filetype_2 = "xhtml"
