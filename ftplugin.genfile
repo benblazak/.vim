@@ -6,7 +6,7 @@
 
 
 "indent
-context tex lsp lisp scheme clips htm html xhtml xml	++ setlocal expandtab   shiftwidth=2 tabstop=2 softtabstop=2
+context tex lsp lisp scheme clips jess htm html xhtml xml	++ setlocal expandtab   shiftwidth=2 tabstop=2 softtabstop=2
 fortran rst				++ setlocal expandtab   shiftwidth=3 tabstop=3 softtabstop=3
 haskell remind markdown	++ setlocal expandtab   shiftwidth=4 tabstop=4 softtabstop=4
 python perl java css vim ada php	++ setlocal noexpandtab shiftwidth=4 tabstop=4 softtabstop=4
@@ -50,8 +50,8 @@ rst			++ map <c-c>   :call<space>Comment('.. # ', '')<cr>
 rst			++ map <c-u> :call<space>UnComment('.. # ', '')<cr>
 context tex	++ map <c-c>   :call<space>Comment('% ', '')<cr>
 context tex	++ map <c-u> :call<space>UnComment('% ', '')<cr>
-lsp lisp scheme clips remind		++ map <c-c>   :call<space>Comment('; ', '')<cr>
-lsp lisp scheme clips remind		++ map <c-u> :call<space>UnComment('; ', '')<cr>
+lsp lisp scheme clips jess remind		++ map <c-c>   :call<space>Comment('; ', '')<cr>
+lsp lisp scheme clips jess remind		++ map <c-u> :call<space>UnComment('; ', '')<cr>
 python perl sh make			++ map <c-c>   :call<space>Comment('# ', '')<cr>
 python perl sh make			++ map <c-u> :call<space>UnComment('# ', '')<cr>
 htm html xhtml xml markdown	++ map <c-c>   :call<space>Comment('<!-- ', ' -->')<cr>
