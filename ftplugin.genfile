@@ -38,11 +38,12 @@ vim                 ++ setlocal expandtab shiftwidth=4 tabstop=4 softtabstop=4
 text        ++ setlocal linebreak
 java        ++ setlocal include=^#\s*import
 java        ++ setlocal includeexpr=substitute(v:fname,'\\.','/','g')
-java python ++ setlocal foldmethod=indent
+java        ++ setlocal foldmethod=indent
+python      ++ setlocal foldmethod=indent
 remind      ++ setlocal comments^=:;
-remind      + setlocal foldmethod=marker
-remind      + syn match remindComment ";.*$"
-remind      + syn keyword remindExpiry THROUGH
+remind      ++ setlocal foldmethod=marker
+remind      ++ syn match remindComment ";.*$"
+remind      ++ syn keyword remindExpiry THROUGH
 
 "movement
 text ++ nnoremap j gj
@@ -59,7 +60,7 @@ text ++ inoremap <Up> <C-o>gk
 "macros
     "(un)comment code
 c cpp java  ++ map <c-c>   :call<space>Comment('// ', '')<cr>
-c cpp java  + map <c-u> :call<space>UnComment('// ', '')<cr>
+c cpp java  ++ map <c-u> :call<space>UnComment('// ', '')<cr>
 css php     ++ map <c-c>   :call<space>Comment('/\* ', ' \*/')<cr>
 css php     ++ map <c-u> :call<space>UnComment('/\* ', ' \*/')<cr>
 vim         ++ map <c-c>   :call<space>Comment('" ', '')<cr>
