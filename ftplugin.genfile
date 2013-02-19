@@ -44,6 +44,7 @@ remind      ++ setlocal comments^=:;
 remind      ++ setlocal foldmethod=marker
 remind      ++ syn match remindComment ";.*$"
 remind      ++ syn keyword remindExpiry THROUGH
+tex context ++ setlocal autoindent
 
 "movement
 text ++ nnoremap j gj
