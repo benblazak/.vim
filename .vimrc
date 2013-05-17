@@ -3,6 +3,7 @@ behave xterm
 
 syntax on
 filetype plugin indent on
+set spell
 
 set backup
 
