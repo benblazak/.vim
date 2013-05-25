@@ -4,7 +4,9 @@ behave xterm
 syntax on
 filetype plugin indent on
 
-let c_no_curly_error=1
+let c_no_curly_error    = 1
+let g:rainbow_active    = 1
+let g:rainbow_operators = 1
 
 set spell
 
