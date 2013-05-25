@@ -3,6 +3,9 @@ behave xterm
 
 syntax on
 filetype plugin indent on
+
+let c_no_curly_error=1
+
 set spell
 
 set backup
