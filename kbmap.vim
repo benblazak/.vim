@@ -15,6 +15,7 @@ set winaltkeys=no
 "macros
 	"line
 inoremap **l <esc>yl80p<esc>079lD
+autocmd bufread *.asm inoremap **l <esc>yl140p<esc>0139lD
 	"underline
 imap **h <esc>xo<esc>pa**l<esc>khljlD
 
