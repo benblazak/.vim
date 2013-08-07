@@ -5,7 +5,6 @@ syntax on
 filetype plugin indent on
 
 let c_no_curly_error    = 1
-let g:rainbow_active    = 1
 let g:rainbow_guifgs = [ 'RoyalBlue3', 'DarkOrange3', 'DarkOrchid3',
                        \ 'FireBrick', ]
 set spell
