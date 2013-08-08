@@ -45,7 +45,6 @@ python      ++ setlocal foldmethod=indent
 nasm        ++ setlocal textwidth=138
 nasm        ++ setlocal comments=n:;,:;
 nasm        ++ setlocal formatoptions+=ro
-nasm        ++ syn match nasmComment "\v;.*$" contains=@spell
 remind      ++ setlocal comments^=:;
 remind      ++ setlocal foldmethod=marker
 remind      ++ syn match remindComment ";.*$"
