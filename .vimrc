@@ -23,8 +23,6 @@ set cmdheight=2		"use 2 lines for the command line
 set foldmethod=syntax
 set foldlevel=999	"open all folds when a file opens by default
 
-set formatoptions-=tc
-
 set printoptions=number:y
 
 

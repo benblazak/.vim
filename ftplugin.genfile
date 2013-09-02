@@ -49,7 +49,10 @@ remind      ++ setlocal comments^=:;
 remind      ++ setlocal foldmethod=marker
 remind      ++ syn match remindComment ";.*$"
 remind      ++ syn keyword remindExpiry THROUGH
+tex context ++ source $VIMRUNTIME/ftplugin/tex.vim
 tex context ++ setlocal autoindent
+tex context ++ setlocal comments=n:%,:%
+tex context ++ setlocal formatoptions+=ro
 
 "movement
 text ++ nnoremap j gj
