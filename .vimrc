@@ -11,19 +11,22 @@ set spell
 
 set backup
 
-set ruler		"display curser position
-set number		"show line numbers
-set showcmd		"show unfinished commands
-set showmatch	"show matching parenthesis
+set ruler      "display curser position
+set number     "show line numbers
+set showcmd    "show unfinished commands
+set showmatch  "show matching parenthesis
 set hlsearch
 set incsearch
 
-set cmdheight=2		"use 2 lines for the command line
+set cmdheight=2  "use 2 lines for the command line
 
 set foldmethod=syntax
-set foldlevel=999	"open all folds when a file opens by default
+set foldlevel=999  "open all folds when a file opens by default
 
 set printoptions=number:y
+
+set exrc    "also source the .vimrc in the current directory, if it exists
+set secure  "to make `set exrc` safer
 
 
 " set where backup, swap, and undo files are kept
