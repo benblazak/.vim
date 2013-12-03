@@ -3,19 +3,11 @@
 " works out :)
 func! Comment(begin, end) range
 	try
-		if a:begin == ""
-			execute a:firstline.",".a:lastline.'s:^:'.a:begin.':'
-		else
-			execute a:firstline.",".a:lastline.'s:^\('.a:begin.'\)\@!:'.a:begin.':'
-		endif
+        execute a:firstline.",".a:lastline.'s:^:'.a:begin.':'
 	catch
 	endtry
 	try
-		if a:end == ""
-			execute a:firstline.",".a:lastline.'s:$:'.a:end.':'
-		else
-			execute a:firstline.",".a:lastline.'s:\('.a:end.'\)\@<!$:'.a:end.':'
-		endif
+        execute a:firstline.",".a:lastline.'s:$:'.a:end.':'
 	catch
 	endtry
 endfunc
