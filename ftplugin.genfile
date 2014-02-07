@@ -49,8 +49,9 @@ remind      ++ setlocal comments^=:;
 remind      ++ setlocal foldmethod=marker
 remind      ++ syn match remindComment ";.*$"
 remind      ++ syn keyword remindExpiry THROUGH
-tex         ++ syn region texZone start="\\begin{lstlisting}" end="\\end{lstlisting}\|%stopzone\>"
-tex         ++ syn match texZone "\\lstinline{.*}"
+" tex         ++ syn region texZone start="\\begin{lstlisting}" end="\\end{lstlisting}\|%stopzone\>"
+tex         ++ syn match texZone "\\begin{lstlisting}\_.\{-}\\end{lstlisting}"
+tex         ++ syn match texZone "\\lstinline{.\{-}}"
 tex context ++ source $VIMRUNTIME/ftplugin/tex.vim
 tex context ++ setlocal autoindent
 tex context ++ setlocal comments=n:%,:%
