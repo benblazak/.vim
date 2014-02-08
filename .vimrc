@@ -1,8 +1,15 @@
+execute pathogen#infect()
+
 set nocompatible
 behave xterm
 
-syntax on
+syntax enable
+set background=light
 filetype plugin indent on
+
+if has('gui_running')
+    colorscheme solarized
+endif
 
 let c_no_curly_error    = 1
 let g:rainbow_guifgs = [ 'RoyalBlue3', 'DarkOrange3', 'DarkOrchid3',
