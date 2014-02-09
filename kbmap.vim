@@ -57,3 +57,6 @@ noremap <m-1> :if b:filetype_orig != '' \| let &filetype = b:filetype_orig \| en
 noremap <m-2> :if b:filetype_orig == '' \| let b:filetype_orig = &filetype \| endif \| let &filetype = b:filetype_2 \| echo &filetype<cr>
 noremap <m-3> :if b:filetype_orig == '' \| let b:filetype_orig = &filetype \| endif \| let &filetype = b:filetype_3 \| echo &filetype<cr>
 
+"plugins
+nnoremap <F5> :GundoToggle<CR>
+

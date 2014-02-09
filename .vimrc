@@ -11,7 +11,7 @@ if has('gui_running')
     colorscheme solarized
 endif
 
-let c_no_curly_error    = 1
+let c_no_curly_error = 1
 let g:rainbow_guifgs = [ 'RoyalBlue3', 'DarkOrange3', 'DarkOrchid3',
                        \ 'FireBrick', ]
 set spell
@@ -35,6 +35,7 @@ set printoptions=number:y
 set exrc    "also source the .vimrc in the current directory, if it exists
 set secure  "to make `set exrc` safer
 
+set undofile
 
 " set where backup, swap, and undo files are kept
 set backupdir=~/.vim/.tmp/backup//,.
