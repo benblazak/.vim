@@ -4,3 +4,9 @@
 [submodule "bundle/gundo.vim"]
 	path = bundle/gundo.vim
 	url = http://github.com/sjl/gundo.vim.git
+[submodule "bundle/elm.vim"]
+	path = bundle/elm.vim
+	url = https://github.com/lambdatoast/elm.vim
+[submodule "bundle/formatvim"]
+	path = bundle/formatvim
+	url = https://github.com/vim-scripts/formatvim

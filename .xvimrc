@@ -1,0 +1,5 @@
+" for the XVim plugin to XCode
+" https://github.com/JugglerShu/XVim
+
+imap kj <esc>
+
