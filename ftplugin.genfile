@@ -57,6 +57,7 @@ tex context ++ source $VIMRUNTIME/ftplugin/tex.vim
 tex context ++ setlocal autoindent
 tex context ++ setlocal comments=n:%,:%
 tex context ++ setlocal formatoptions+=ro
+elm         ++ setlocal autoindent
 
 "movement
 text ++ nnoremap j gj
