@@ -8,6 +8,7 @@
 "indent
 "--- 2 ---
 clips               ++ setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
+css                 ++ setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
 context             ++ setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
 elm                 ++ setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
 htm html            ++ setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
@@ -26,7 +27,6 @@ ada                 ++ setlocal expandtab shiftwidth=4 tabstop=4 softtabstop=4
 asm                 ++ setlocal expandtab shiftwidth=4 tabstop=4 softtabstop=4
 c                   ++ setlocal expandtab shiftwidth=4 tabstop=4 softtabstop=4
 cpp                 ++ setlocal expandtab shiftwidth=4 tabstop=4 softtabstop=4
-css                 ++ setlocal expandtab shiftwidth=4 tabstop=4 softtabstop=4
 h                   ++ setlocal expandtab shiftwidth=4 tabstop=4 softtabstop=4
 haskell             ++ setlocal expandtab shiftwidth=4 tabstop=4 softtabstop=4
 java                ++ setlocal expandtab shiftwidth=4 tabstop=4 softtabstop=4
