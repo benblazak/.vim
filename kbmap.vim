@@ -44,7 +44,7 @@ noremap <c-f9> :wa<CR>:make all run<CR>| noremap! <c-f9> <esc>:wa<CR>:make all r
 
 "external program filters/inserts
 	"insert datetime
-nnoremap <c-d> m':r !dt<cr>v$hyu``P| noremap! <c-d> <esc>m':r !dt<cr>v$hyu``pa
+nnoremap <c-d> o(<c-R>=system('echo -n `dt`')<cr>)<esc>| noremap! <c-d> (<c-R>=system('echo -n `dt`')<cr>)
 
 "change filetype
 	"vars
