@@ -59,9 +59,8 @@ syn match matlabTransposeOperator	"[])a-zA-Z0-9.]'"lc=1
 
 syn match matlabSemicolon		";"
 
-syn match matlabComment			"%.*$"	contains=matlabTodo,matlabTab,@Spell
-" MT_ADDON - correctly highlights words after '...' as comments
-syn match matlabComment			"\.\.\..*$"	contains=matlabTodo,matlabTab,@Spell
+syn region matlabComment		start="%" end="$" contains=matlabTodo,matlabTab,@Spell
+syn match matlabComment			"\.\.\..*$" contains=matlabTodo,matlabTab,@Spell
 syn region matlabMultilineComment	start=+%{+ end=+%}+ contains=matlabTodo,matlabTab,@Spell
 
 syn keyword matlabOperator		break zeros default margin round ones rand
