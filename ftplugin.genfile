@@ -36,6 +36,7 @@ perl                ++ setlocal expandtab shiftwidth=4 tabstop=4 softtabstop=4
 php                 ++ setlocal expandtab shiftwidth=4 tabstop=4 softtabstop=4
 python              ++ setlocal expandtab shiftwidth=4 tabstop=4 softtabstop=4
 remind              ++ setlocal expandtab shiftwidth=4 tabstop=4 softtabstop=4
+text                ++ setlocal expandtab shiftwidth=4 tabstop=4 softtabstop=4
 vim                 ++ setlocal expandtab shiftwidth=4 tabstop=4 softtabstop=4
 
 "display & folding
