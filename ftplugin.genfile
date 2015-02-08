@@ -42,28 +42,29 @@ text                ++ setlocal expandtab shiftwidth=4 tabstop=4 softtabstop=4
 vim                 ++ setlocal expandtab shiftwidth=4 tabstop=4 softtabstop=4
 
 "display & folding
+arduino     ++ setlocal formatoptions+=ro
 c cpp       ++ RainbowLoad
-text        ++ setlocal linebreak
+elm         ++ setlocal autoindent
+java        ++ setlocal foldmethod=indent
 java        ++ setlocal include=^#\s*import
 java        ++ setlocal includeexpr=substitute(v:fname,'\\.','/','g')
-java        ++ setlocal foldmethod=indent
-python      ++ setlocal foldmethod=indent
 matlab      ++ setlocal formatoptions+=ro
-nasm        ++ setlocal textwidth=139
 nasm        ++ setlocal comments=n:;,:;
 nasm        ++ setlocal formatoptions+=ro
+nasm        ++ setlocal textwidth=139
+python      ++ setlocal foldmethod=indent
 remind      ++ setlocal comments^=:;
 remind      ++ setlocal foldmethod=marker
-remind      ++ syn match remindComment ";.*$"
 remind      ++ syn keyword remindExpiry THROUGH
+remind      ++ syn match remindComment ";.*$"
 tex         ++ syn match texZone "\\begin{lstlisting}\_.\{-}\\end{lstlisting}"
 tex         ++ syn match texZone "\\lstinline{.\{-}}"
 tex         ++ syn match texZone "\\url{.\{-}}"
-tex context ++ source $VIMRUNTIME/ftplugin/tex.vim
 tex context ++ setlocal autoindent
 tex context ++ setlocal comments=n:%,:%
 tex context ++ setlocal formatoptions+=ro
-elm         ++ setlocal autoindent
+tex context ++ source $VIMRUNTIME/ftplugin/tex.vim
+text        ++ setlocal linebreak
 
 "movement
 text ++ nnoremap j gj
