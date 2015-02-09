@@ -25,6 +25,7 @@ yaml                ++ setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
 fortran             ++ setlocal expandtab shiftwidth=3 tabstop=3 softtabstop=3
 rst                 ++ setlocal expandtab shiftwidth=3 tabstop=3 softtabstop=3
 "--- 4 ---
+arduino             ++ setlocal expandtab shiftwidth=4 tabstop=4 softtabstop=4
 ada                 ++ setlocal expandtab shiftwidth=4 tabstop=4 softtabstop=4
 asm                 ++ setlocal expandtab shiftwidth=4 tabstop=4 softtabstop=4
 c                   ++ setlocal expandtab shiftwidth=4 tabstop=4 softtabstop=4
