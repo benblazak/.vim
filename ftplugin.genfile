@@ -43,7 +43,7 @@ text                ++ setlocal expandtab shiftwidth=4 tabstop=4 softtabstop=4
 vim                 ++ setlocal expandtab shiftwidth=4 tabstop=4 softtabstop=4
 
 "display & folding
-arduino     ++ setlocal formatoptions+=ro
+arduino     ++ setlocal cindent formatoptions+=ro
 c cpp       ++ RainbowLoad
 elm         ++ setlocal autoindent
 java        ++ setlocal foldmethod=indent
