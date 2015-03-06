@@ -82,8 +82,10 @@ text ++ inoremap <Up> <C-o>gk
 
 "macros
     "(un)comment code
-c cpp java javascript arduino ++ map <c-c>   :call<space>Comment('// ', '')<cr>
-c cpp java javascript arduino ++ map <c-u> :call<space>UnComment('// ', '')<cr>
+c cpp objc arduino    ++ map <c-c>   :call<space>Comment('// ', '')<cr>
+c cpp objc arduino    ++ map <c-u> :call<space>UnComment('// ', '')<cr>
+java javascript       ++ map <c-c>   :call<space>Comment('// ', '')<cr>
+java javascript       ++ map <c-u> :call<space>UnComment('// ', '')<cr>
 css php               ++ map <c-c>   :call<space>Comment('/\* ', ' \*/')<cr>
 css php               ++ map <c-u> :call<space>UnComment('/\* ', ' \*/')<cr>
 vim                   ++ map <c-c>   :call<space>Comment('" ', '')<cr>
