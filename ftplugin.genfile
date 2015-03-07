@@ -43,22 +43,28 @@ remind              ++ setlocal expandtab shiftwidth=4 tabstop=4 softtabstop=4
 text                ++ setlocal expandtab shiftwidth=4 tabstop=4 softtabstop=4
 vim                 ++ setlocal expandtab shiftwidth=4 tabstop=4 softtabstop=4
 
-"display & folding
+"display, folding, and formatting
 arduino     ++ setlocal cindent formatoptions+=ro
 c cpp       ++ RainbowLoad
 elm         ++ setlocal autoindent
+haskell     ++ setlocal autoindent
 java        ++ setlocal foldmethod=indent
 java        ++ setlocal include=^#\s*import
 java        ++ setlocal includeexpr=substitute(v:fname,'\\.','/','g')
+markdown    ++ setlocal autoindent
 matlab      ++ setlocal formatoptions+=ro
 nasm        ++ setlocal comments=n:;,:;
 nasm        ++ setlocal formatoptions+=ro
 nasm        ++ setlocal textwidth=139
+objc objcpp ++ setlocal formatoptions+=ro
+pl          ++ setlocal formatoptions+=or
 python      ++ setlocal foldmethod=indent
+python      ++ setlocal formatoptions+=or
 remind      ++ setlocal comments^=:;
 remind      ++ setlocal foldmethod=marker
 remind      ++ syn keyword remindExpiry THROUGH
 remind      ++ syn match remindComment ";.*$"
+sh          ++ setlocal formatoptions+=or
 tex         ++ syn match texZone "\\begin{lstlisting}\_.\{-}\\end{lstlisting}"
 tex         ++ syn match texZone "\\lstinline{.\{-}}"
 tex         ++ syn match texZone "\\url{.\{-}}"
@@ -67,6 +73,8 @@ tex context ++ setlocal comments=n:%,:%
 tex context ++ setlocal formatoptions+=ro
 tex context ++ source $VIMRUNTIME/ftplugin/tex.vim
 text        ++ setlocal linebreak
+yacc        ++ setlocal autoindent
+
 
 "movement
 text ++ nnoremap j gj
@@ -123,10 +131,6 @@ c cpp h java        ++ let @e="0i * \<esc>j"
 java ++ iabbr sysout System.out.print(
 java ++ iabbr sysoutl System.out.println(
 java ++ iabbr sysoutf System.out.printf(
-
-"auto formatting
-python sh pl            ++ setlocal formatoptions+=or
-yacc haskell markdown   ++ setlocal autoindent
 
 "changing filetypes
 php     ++ let b:filetype_2 = "xhtml"
