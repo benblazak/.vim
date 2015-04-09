@@ -10,3 +10,6 @@
 [submodule "bundle/formatvim"]
 	path = bundle/formatvim
 	url = https://github.com/vim-scripts/formatvim
+[submodule "bundle/vim-openscad"]
+	path = bundle/vim-openscad
+	url = git@github.com:sirtaj/vim-openscad.git
