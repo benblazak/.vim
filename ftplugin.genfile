@@ -36,6 +36,7 @@ java                ++ setlocal expandtab shiftwidth=4 tabstop=4 softtabstop=4
 markdown            ++ setlocal expandtab shiftwidth=4 tabstop=4 softtabstop=4
 matlab              ++ setlocal expandtab shiftwidth=4 tabstop=4 softtabstop=4
 objc                ++ setlocal expandtab shiftwidth=4 tabstop=4 softtabstop=4
+openscad            ++ setlocal expandtab shiftwidth=4 tabstop=4 softtabstop=4
 perl                ++ setlocal expandtab shiftwidth=4 tabstop=4 softtabstop=4
 php                 ++ setlocal expandtab shiftwidth=4 tabstop=4 softtabstop=4
 python              ++ setlocal expandtab shiftwidth=4 tabstop=4 softtabstop=4
