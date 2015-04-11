@@ -3,3 +3,5 @@
 
 imap kj <esc>
 
+nmap r<enter> s<enter><esc>  " because something's not quite right
+
