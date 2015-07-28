@@ -36,11 +36,11 @@ nnoremap <PageDown> 2<c-e>| inoremap <PageDown> <esc>2<c-e>
 
 "make stuff
 	"save+compile
-noremap <f9> :wa<CR>:make<CR>| noremap! <f9> <esc>:wa<CR>:make<CR>
+noremap <f9> :wa<CR>:make!<CR>| noremap! <f9> <esc>:wa<CR>:make!<CR>
 	"run
-noremap <f10> :make run<CR>| noremap! <f10> <esc>:make run<CR>
+noremap <f10> :make! run<CR>| noremap! <f10> <esc>:make! run<CR>
 	"save+compile+run
-noremap <c-f9> :wa<CR>:make all run<CR>| noremap! <c-f9> <esc>:wa<CR>:make all run<CR>
+noremap <c-f9> :wa<CR>:make! all run<CR>| noremap! <c-f9> <esc>:wa<CR>:make! all run<CR>
 
 "external program filters/inserts
 	"insert datetime
