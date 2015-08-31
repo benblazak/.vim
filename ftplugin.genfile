@@ -16,6 +16,7 @@ javascript          ++ setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
 jess                ++ setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
 json                ++ setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
 lsp lisp            ++ setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
+lua                 ++ setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
 scheme              ++ setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
 tex                 ++ setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
 xhtml               ++ setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
