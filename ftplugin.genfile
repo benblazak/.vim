@@ -93,8 +93,8 @@ text ++ inoremap <Up> <C-o>gk
 
 "macros
     "(un)comment code
-ada haskell elm       ++ map <c-c>   :call<space>Comment('-- ', '')<cr>
-ada haskell elm       ++ map <c-u> :call<space>UnComment('-- ', '')<cr>
+ada haskell elm lua   ++ map <c-c>   :call<space>Comment('-- ', '')<cr>
+ada haskell elm lua   ++ map <c-u> :call<space>UnComment('-- ', '')<cr>
 c cpp objc arduino    ++ map <c-c>   :call<space>Comment('// ', '')<cr>
 c cpp objc arduino    ++ map <c-u> :call<space>UnComment('// ', '')<cr>
 context tex matlab    ++ map <c-c>   :call<space>Comment('% ', '')<cr>
