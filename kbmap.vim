@@ -24,6 +24,7 @@ imap **h <esc>xo<esc>pa**l<esc>khljlD
 nnoremap <C-s> :wa<CR>| inoremap <C-s> <esc>:wa<CR>a
 	"<esc>
 noremap <S-space> <esc>| noremap! kj <esc>
+noremap <S-space> <esc>| noremap! df <esc>
 	":tabn
 noremap <C-tab> :tabn<CR>| noremap! <C-tab> <esc>:tabn<CR>
 	":tabp
