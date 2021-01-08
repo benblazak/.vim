@@ -1,11 +1,14 @@
 syntax on
-set background=dark
-colorscheme solarized8_high
-highlight Comment cterm=none
-highlight Comment gui=none
 
 if has("gui_running")
     winsize 84 24
+    set background=light
+    colorscheme solarized8
+    highlight Comment gui=none
+else
+    set background=dark
+    colorscheme solarized8_high
+    highlight Comment cterm=none
 endif
 
 set ruler
