@@ -1,0 +1,5 @@
+formatvim
+- "Convert current file to colored HTML, BBCode or whatever"
+- git clone --recurse-submodules https://github.com/vim-scripts/formatvim.git
+- was causing errors to print on startup, so i removed it
+

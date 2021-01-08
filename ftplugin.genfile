@@ -75,6 +75,8 @@ tex context ++ setlocal autoindent
 tex context ++ setlocal comments=n:%,:%
 tex context ++ setlocal formatoptions+=ro
 tex context ++ source $VIMRUNTIME/ftplugin/tex.vim
+text        ++ setlocal autoindent
+text        ++ setlocal foldmethod=indent
 text        ++ setlocal linebreak
 yacc        ++ setlocal autoindent
 
