@@ -1,8 +1,0 @@
-" for the XVim plugin to XCode
-" https://github.com/JugglerShu/XVim
-
-imap kj <esc>
-
-" hack, because r<enter> appears to crash XVim right now
-nmap r<enter> s<enter><esc>
-

@@ -1,4 +1,6 @@
-.tmp/
-ftplugin/
-spell/
+/_backup
+/_swap
+/_undo
+
+/.netrwhist
 

@@ -1,15 +1,3 @@
-[submodule "bundle/vim-colors-solarized"]
-	path = bundle/vim-colors-solarized
-	url = git://github.com/altercation/vim-colors-solarized.git
-[submodule "bundle/gundo.vim"]
-	path = bundle/gundo.vim
-	url = http://github.com/sjl/gundo.vim.git
-[submodule "bundle/elm.vim"]
-	path = bundle/elm.vim
-	url = https://github.com/lambdatoast/elm.vim
-[submodule "bundle/formatvim"]
-	path = bundle/formatvim
-	url = https://github.com/vim-scripts/formatvim
-[submodule "bundle/vim-openscad"]
-	path = bundle/vim-openscad
-	url = git@github.com:sirtaj/vim-openscad.git
+[submodule "pack/themes/opt/vim-solarized8"]
+	path = pack/themes/opt/vim-solarized8
+	url = https://github.com/lifepillar/vim-solarized8.git
