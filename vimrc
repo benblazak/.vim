@@ -26,6 +26,10 @@ inoremap **l <esc>yl80p<esc>079lD
 nnoremap <c-s> :w<cr>
 inoremap <c-s> <esc>:w<cr>a
 nnoremap <c-h> :noh<cr>
+nnoremap <c-n> :next<cr>
+inoremap <c-n> <esc>:next<cr>
+nnoremap <c-p> :previous<cr>
+inoremap <c-p> <esc>:previous<cr>
 map <c-c> :call Comment(w:comment_begin, w:comment_end)<cr>
 map <c-u> :call Uncomment(w:comment_begin, w:comment_end)<cr>
 
