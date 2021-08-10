@@ -42,6 +42,7 @@ autocmd filetype * let w:comment_begin='# '|let w:comment_end=''
 autocmd filetype json setlocal shiftwidth=2 tabstop=2 softtabstop=2
 autocmd filetype lisp setlocal shiftwidth=2 tabstop=2 softtabstop=2
 autocmd filetype lua setlocal shiftwidth=2 tabstop=2 softtabstop=2
+autocmd filetype markdown setlocal shiftwidth=2 tabstop=2 softtabstop=2
 autocmd filetype tex setlocal shiftwidth=2 tabstop=2 softtabstop=2
 autocmd filetype yaml setlocal shiftwidth=2 tabstop=2 softtabstop=2
 
